@@ -1,0 +1,94 @@
+body{
+    /* Backgroud */
+    background-image: url('bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100%;
+    font-family: 'Cute Font', cursive;
+    /* height: 100vh; */    
+}
+
+/* Div for Random Names and Button */
+.randomNames{
+  margin-left: 490px;
+  margin-top: 260px;
+  position: fixed;
+}
+
+.randomBtn{
+  background-color: rgba(255, 255, 255, 0);
+    background-size: cover;
+    border: none;
+    width: 180px;
+    height: 130px;
+    margin-left: 800px;
+    margin-top: 330px;
+    cursor:pointer;
+   
+    /* text-align: center; */
+    font-family: 'Press Start 2P';
+    position: fixed;
+   }
+/* The names */
+.student{
+    /* font-family: 'Press Start 2P'; */
+    /* font-size: 50px; */
+    color: #fff9ec;
+    animation: mymove 5s infinite;
+    font-weight: bolder;
+}
+
+@keyframes mymove {
+  45% {font-size: 90px;}
+}
+
+
+/* Animation */
+
+  .pic {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 130px;
+    animation: animate 10s linear infinite;
+  }
+  
+  @keyframes animate {
+    0% {
+      right: 0;
+      transform: translate(-100%);
+    }
+    100% {
+      right: 100%;
+      transform: translate(0);
+    }
+  }
+
+
+  /* UP DOWN */
+  .bro {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 180px;
+    transform: scaleX(-1);
+  }
+  
+  /* .bro{
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+  .bro {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+} */
