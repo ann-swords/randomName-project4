@@ -11,10 +11,16 @@ const names = [
     'GROUP 10',
 ]
 
+// Buttons:
 const randomBtn = document.querySelector('.randomBtn') 
+const start = document.querySelector('.start') 
+// Student Names/Groups
 const student = document.querySelector('.student') 
-let soundEffects = new Audio('click.wav')
-const video = document.getElementById('myVideo');
+// Sound effects
+let soundEffects = new Audio('vs.m4a')
+
+// Videos
+const video = document.getElementById('shuffel');
 
 //Randomizing the names
 for (let i = 0; i < names.length; i++) {
@@ -24,6 +30,27 @@ for (let i = 0; i < names.length; i++) {
     names.push(...randomItem)
 }
 
+// Befoer loading the groups vidoe
+randomBtn.disabled = true
+randomBtn.style.cursor = "none"
+
+start.addEventListener("click", ()=>{
+    video.src = "groups.mp4";
+    video.load();
+    start.disabled = true;
+    start.style.cursor = "none"
+    start.style.width = "0px"
+    start.style.height = "0px"
+    
+
+
+    // Random Button:
+    randomBtn.disabled = false
+    randomBtn.style.cursor = "pointer"
+})
+
+
+// video.muted = !video.muted; 
 function getRandomName (){
     if(names.length !== 0){
         student.innerText = names.pop() 
