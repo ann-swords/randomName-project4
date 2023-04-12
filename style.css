@@ -68,11 +68,17 @@ body{
     position: absolute;
     left: 0;
     bottom: 0;
-    height: 180px;
-    transform: scaleX(-1);
+    height: 100px;
+  }
+
+  .bro2 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
   }
   
-  /* .bro{
+  .bro{
     -webkit-animation: mover 1s infinite  alternate;
     animation: mover 1s infinite  alternate;
 }
@@ -86,8 +92,8 @@ body{
 }
 @keyframes mover {
     0% { transform: translateY(0); }
-    100% { transform: translateY(-10px); }
-} */
+    100% { transform: translateY(-600px); }
+}
 
 
 .myVideo {
@@ -114,4 +120,10 @@ body{
   cursor:pointer;
  
   position: fixed;
+}
+
+#broSound{
+  color: rgba(240, 248, 255, 0);
+  background-color: rgba(240, 248, 255, 0);
+  border: none;
 }

@@ -13,9 +13,12 @@ const names = [
 
 // Buttons:
 const randomBtn = document.querySelector('.randomBtn') 
-const start = document.querySelector('.start') 
+const start = document.querySelector('.start')
+const broSound = document.querySelector('#broSound')
 // Student Names/Groups
 const student = document.querySelector('.student') 
+const bro = document.querySelector('.bro') 
+const bro2 = document.querySelector('.bro2') 
 // Sound effects
 let soundEffects = new Audio('vs.m4a')
 
@@ -33,6 +36,11 @@ for (let i = 0; i < names.length; i++) {
 // Befoer loading the groups vidoe
 randomBtn.disabled = true
 randomBtn.style.cursor = "none"
+bro.src = ""
+
+broSound.addEventListener("click", ()=>{
+    video.muted = !video.muted;
+})
 
 start.addEventListener("click", ()=>{
     video.src = "groups.mp4";
@@ -41,6 +49,10 @@ start.addEventListener("click", ()=>{
     start.style.cursor = "none"
     start.style.width = "0px"
     start.style.height = "0px"
+
+    bro2.src = ""
+    bro.src = "bro.png"
+    
     
 
 
@@ -50,7 +62,7 @@ start.addEventListener("click", ()=>{
 })
 
 
-// video.muted = !video.muted; 
+ 
 function getRandomName (){
     if(names.length !== 0){
         student.src = names.pop() 
@@ -62,6 +74,8 @@ function getRandomName (){
         video.load(); // Load the new video
         randomBtn.disabled = true
         randomBtn.style.cursor = "none"
+        bro.src = ""
+        bro2.src = "bro2.png"
     }
 }
 
