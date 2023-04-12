@@ -6,14 +6,13 @@ body{
     background-attachment: fixed;
     background-position: center;
     background-size: 100%;
-    font-family: 'Cute Font', cursive;
     /* height: 100vh; */    
 }
 
 /* Div for Random Names and Button */
 .randomNames{
-  margin-left: 490px;
-  margin-top: 260px;
+  margin-left: 100px;
+  margin-top: 50px;
   position: fixed;
 }
 
@@ -21,9 +20,9 @@ body{
   background-color: rgba(255, 255, 255, 0);
   background-size: cover;
   border: none;
-  width: 370px;
-  height: 170px;
-  margin-left: 500px;
+  width: 200px;
+  height: 250px;
+  margin-left: 525px;
   margin-top: 200px;
   cursor:pointer;
    
@@ -33,11 +32,8 @@ body{
    }
 /* The names */
 .student{
-    /* font-family: 'Press Start 2P'; */
-    /* font-size: 50px; */
-    color: #fff9ec;
-    animation: mymove 5s infinite;
-    font-weight: bolder;
+  width: 1050px;
+  /* height: 200px; */
 }
 
 /* @keyframes mymove {
@@ -109,8 +105,7 @@ body{
 }
 
 .start{
-  background-color: rgba(255, 255, 255, 0);
-  background-size: cover;
+  background-color: rgb(255, 0, 0);
   border: none;
   width: 370px;
   height: 170px;
@@ -118,7 +113,5 @@ body{
   margin-top: 200px;
   cursor:pointer;
  
-  /* text-align: center; */
-  font-family: 'Press Start 2P';
   position: fixed;
 }

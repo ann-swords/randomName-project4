@@ -1,14 +1,14 @@
 const names = [
-    'GROUP 1',
-    'GROUP 2',
-    'GROUP 3',
-    'GROUP 4',
-    'GROUP 5',
-    'GROUP 6',
-    'GROUP 7',
-    'GROUP 8',
-    'GROUP 9',
-    'GROUP 10',
+    'contentHive.png',
+    'houseScout.png',
+    'mula.png',
+    'researchLibrary.png',
+    'weddingPlaning.png',
+    'planMyPlate.png',
+    'travelBuddy.png',
+    'stockMarket.png',
+    'tawze3at.png',
+    'passpal.png',
 ]
 
 // Buttons:
@@ -53,11 +53,11 @@ start.addEventListener("click", ()=>{
 // video.muted = !video.muted; 
 function getRandomName (){
     if(names.length !== 0){
-        student.innerText = names.pop() 
+        student.src = names.pop() 
         soundEffects.play()
         console.log(names)
     } else {
-        student.innerText = ""
+        student.src = ""
         video.src = "SEI3Graduation.mp4"; // Change the source of the video
         video.load(); // Load the new video
     }
