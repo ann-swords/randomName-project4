@@ -60,6 +60,8 @@ function getRandomName (){
         student.src = ""
         video.src = "SEI3Graduation.mp4"; // Change the source of the video
         video.load(); // Load the new video
+        randomBtn.disabled = true
+        randomBtn.style.cursor = "none"
     }
 }
 
